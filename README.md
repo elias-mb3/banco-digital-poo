@@ -1,18 +1,31 @@
-## Getting Started
+# Sistema Bancário Simples (Java POO)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto simula um sistema bancário básico, com suporte para contas corrente e poupança, permitindo saque, depósito e transferência entre contas.
 
-## Folder Structure
+## Estrutura
 
-The workspace contains two folders by default, where:
+- Java puro (sem frameworks)
+- Separado por pacotes (`model` para entidades)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como Executar
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Clone o repositório:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```bash
+git clone https://github.com/elias-mb3/banco-digital-poo.git
+```
 
-## Dependency Management
+2. Compile e execute:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+cd sistema-bancario-java
+javac -d dist src/model/*.java src/Main.java src/Main.java
+java -cp dist Main
+```
+
+## Saída esperada:
+
+```
+Saldo CC: 800.0
+Saldo CP: 700.0
+```
